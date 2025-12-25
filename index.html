@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root{
+      --primary-green:#2E5A35;
+      --light-green:#E8F5E9;
+      --text-dark:#1A1A1A;
+      --text-Gray:#666666;
+      --radious:1.25rem;
+    }
+
+    body{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: var(--light-green);
+
+      color: var(--text-dark);
+    }
+
+    .card{
+      width: min(95%,32rem);
+      display: flex;
+      flex-direction:column ;
+      justify-content: space-evenly;
+      padding: 1.3rem;
+      background:white;
+      border-radius: var(--radious);
+      box-shadow: 3px 3px 10px rgba(46, 90, 53, 0.3);
+
+    }
+
+
+    .header{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+
+    .header img{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+
+    }
+
+    .title{
+
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;  
+    }
+
+    p{
+      padding: 0 0.8rem;
+      font-size: 1rem;
+      line-height:1.5;
+      opacity: 85%;
+    }
+
+     h1{
+      color: var(--primary-green);
+    }
+
+    .safcha h1{
+     margin-bottom: 0.6rem;
+    }
+
+    .benefits{
+      margin-top: 1.5rem;
+    }
+    
+    .benefits h1{
+      margin-bottom: 0.6rem;
+    }
+
+    .bullet{
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.6rem;
+      justify-items: center;
+      gap: 1rem;
+      padding: 0.8rem;
+      background: var(--light-green);
+      border-radius: 1rem;
+    }
+
+
+    .check{
+      background: var(--primary-green);
+      border-radius: 100%;
+      height: 1.5rem;
+      width: 1.5rem;
+      text-align: center;
+      color: var(--light-green);
+      font-weight:900;
+    }
+
+
+    .action{
+      margin:2rem 0 1rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+
+    }
+
+    .action a{
+      text-decoration: none;
+      padding: 1rem 1rem;
+      color: var(--text-dark);
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-radius: var(--radious);
+      text-align: center;
+    }
+
+    .action a:hover{
+      transform: scale(1.02);
+    }
+
+    .action a:nth-child(1){
+      background: var(--primary-green);
+      color:var(--light-green);
+
+      
+    }
+
+    .action a:nth-child(2){
+      background: var(--light-green);
+      color:var(--primary-green);
+      outline: var(--primary-green) solid 1px;
+      
+      
+    }
+
+
+        /* .action a:nth-child(1):hover{
+          background: var(--light-green);
+      color:var(--primary-green);
+      outline: var(--primary-green) solid 1px;
+
+      
+    }
+
+        .action a:nth-child(2):hover{
+           background: var(--primary-green);
+      color:var(--light-green);
+
+
+      
+      
+      
+    } */
+    
+
+  </style>
+</head>
+<body>
+
+
+  <main class="card">
+
+
+    <header class="header">
+      <img src="./assets/inquiry.svg" alt="not found">
+      <div class="title">
+        <h1>SAFCHA</h1>
+        <p>PURE</p>
+      </div>
+    </header>
+
+
+    <section class="safcha">
+      <h1>What is Safcha?</h1>
+      <p>Safcha is a wellness-focused brand designed to integrate simple, healthy habits into your daily routine. We combine clean, natural ingredients with modern lifestyle solutions to help you feel your best every day.</p>
+    </section>
+
+    <section class="benefits">
+      <h1>Key Benefits</h1>
+
+      <div class="bullets">
+        <div class="bullet"><div class="check">✓</div>Lorem ipsum dolor sit amet consectetur</div>
+        <div class="bullet"><div class="check">✓</div>adipisicing elit. Qui, iste nihil, tempore </div>
+        <div class="bullet"><div class="check">✓</div>dignissimos nisi libero neque possimus qui</div>
+      </div>
+
+    </section>
+
+    <section class="action">
+      <a href="#">Buy now</a>
+      <a href="#">Learn More</a>
+    </section>
+  </main>
+  
+</body>
+</html>
