@@ -31,7 +31,7 @@
     }
 
     .card{
-      width: min(95%,32rem);
+      width: min(90%,32rem);
       display: flex;
       flex-direction:column ;
       justify-content: space-evenly;
@@ -39,6 +39,7 @@
       background:white;
       border-radius: var(--radious);
       box-shadow: 3px 3px 10px rgba(46, 90, 53, 0.3);
+      
 
     }
 
@@ -47,14 +48,15 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.8rem;
     }
 
 
     .header img{
-      width: 3rem;
-      height: 3rem;
+      width: 3.5rem;
+      height: 3.5rem;
       border-radius: 50%;
+      background: var(--primary-green);
 
     }
 
@@ -62,29 +64,31 @@
 
       display: flex;
       flex-direction: column;
-      justify-content:space-between;  
+      margin-left: 1rem;  
     }
 
     p{
-      padding: 0 0.8rem;
       font-size: 1rem;
       line-height:1.5;
       opacity: 85%;
     }
 
-     h1{
+     h1 ,h2{
       color: var(--primary-green);
     }
 
-    .safcha h1{
+    .safcha h2{
      margin-bottom: 0.6rem;
+    }
+    .safcha p{
+      padding: 0 0.8rem;
     }
 
     .benefits{
       margin-top: 1.5rem;
     }
     
-    .benefits h1{
+    .benefits h2{
       margin-bottom: 0.6rem;
     }
 
@@ -112,7 +116,7 @@
 
 
     .action{
-      margin:2rem 0 1rem 0;
+      margin:2rem 0 0.3rem 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
@@ -128,15 +132,23 @@
       font-size: 1.3rem;
       border-radius: var(--radious);
       text-align: center;
+      border: 1px solid transparent;
     }
 
     .action a:hover{
       transform: scale(1.02);
     }
 
+     .action a:focus{
+     
+      outline-offset: 4px;
+    }
+
     .action a:nth-child(1){
       background: var(--primary-green);
       color:var(--light-green);
+      outline: var(--primary-green) solid 1px;
+
 
       
     }
@@ -181,18 +193,18 @@
       <img src="./assets/inquiry.svg" alt="not found">
       <div class="title">
         <h1>SAFCHA</h1>
-        <p>PURE</p>
+        <p>Wellness for everyday life</p>
       </div>
     </header>
 
 
     <section class="safcha">
-      <h1>What is Safcha?</h1>
+      <h2>What is Safcha?</h2>
       <p>Safcha is a wellness-focused brand designed to integrate simple, healthy habits into your daily routine. We combine clean, natural ingredients with modern lifestyle solutions to help you feel your best every day.</p>
     </section>
 
     <section class="benefits">
-      <h1>Key Benefits</h1>
+      <h2>Key Benefits</h2>
 
       <div class="bullets">
         <div class="bullet"><div class="check">✓</div>Lorem ipsum dolor sit amet consectetur</div>
