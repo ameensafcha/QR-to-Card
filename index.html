@@ -161,25 +161,17 @@
       
     }
 
-
-        /* .action a:nth-child(1):hover{
-          background: var(--light-green);
-      color:var(--primary-green);
-      outline: var(--primary-green) solid 1px;
-
-      
+    .arrow{
+      font-size: 1.4rem;
     }
 
-        .action a:nth-child(2):hover{
-           background: var(--primary-green);
-      color:var(--light-green);
-
-
-      
-      
-      
-    } */
-    
+    @media(max-width:440px){
+      .action{
+        
+        grid-template-columns: 1fr;
+      }
+    }
+  
 
   </style>
 </head>
@@ -215,8 +207,8 @@
     </section>
 
     <section class="action">
-      <a href="#">Buy now</a>
-      <a href="#">Learn More</a>
+      <a href="#">Buy Now</a>
+      <a href="#">Learn More <span class="arrow">→</span></a>
     </section>
   </main>
   
